@@ -4,6 +4,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
 
 
@@ -14,7 +15,8 @@ import {MatCardModule} from '@angular/material/card';
     MatFormFieldModule,
     MatInputModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
 
   ],
   exports: [
@@ -22,7 +24,8 @@ import {MatCardModule} from '@angular/material/card';
     CommonModule,
     MatInputModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
 
   ]
 })

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

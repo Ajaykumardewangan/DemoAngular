@@ -10,7 +10,8 @@ export class LoginComponent implements OnInit {
 
   constructor() { }
   email = new FormControl('', [Validators.required, Validators.email]);
-
+  password = new FormControl('', [Validators.required, Validators.email]);
+  name: string = 'hello';
   getErrorMessage() {
     return this.email.hasError('required') ? 'You must enter a value' :
         this.email.hasError('email') ? 'Not a valid email' :
@@ -18,5 +19,8 @@ export class LoginComponent implements OnInit {
   }
   ngOnInit() {
   }
-
+submit() {
+  console.log('email', this.email.value);
+  console.log('password', this.password.value);
+}
 }

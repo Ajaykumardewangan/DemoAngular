@@ -1,9 +1,20 @@
 
   <mat-card >
+      {{name}}
+      
+      <div  fxLayoutAlign="space-around center">
     <div class="example-container">
         <mat-form-field>
           <input matInput placeholder="Enter your email" [formControl]="email" required autocomplete = "off">
           <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
         </mat-form-field>
       </div>
+      <div>
+      <mat-form-field>
+        <input matInput placeholder="Enter your password" [formControl]="password" required autocomplete = "off">
+        <mat-error *ngIf="password.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+    </div>
+    <button mat-raised-button color="primary" (click) = "submit()">login</button>
+</div>
     </mat-card>
